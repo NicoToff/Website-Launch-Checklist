@@ -281,9 +281,156 @@ Launch preparation generally takes a day or more. You should also reserve a day 
  
 <br>
 
-## Suggestions
+# Pre-launch Website Checklist
 
-We'd love to hear 'em. [Open an issue](https://github.com/MarketingPipeline/Website-Launch-Checklist/issues)
+The following checklist should be actioned after all major development work has been completed.
+
+## Browser Testing
+
+Check the website:
+
+1. Responds to different devices and screen sizes appropriately.
+2. The design of the site is displayed as expected.
+3. Nothing appears to be broken.
+4. __All__ functionality works as expected for all browsers and devices, and to the best of the browser's compatibility at its time.
+
+#### Desktop
+
+- [ ] Chrome(mium)
+- [ ] Safari
+- [ ] Firefox
+- [ ] Microsoft Edge 15
+- [ ] Microsoft Edge 16
+- [ ] Microsoft Edge 17
+- [ ] Microsoft Edge 18
+- [ ] Microsoft Edge Latest (Chromium version Windows/Mac)
+- [ ] IE11 (if requested)
+
+#### Mobile
+
+For iOS, use Apple's device simulator with various devices (of different screen sizes).
+
+- [ ] Android Chrome
+- [ ] iOS Safari 9 (if requested)
+- [ ] iOS Safari 10 (if requested)
+- [ ] iOS Safari 11 (if requested)
+- [ ] iOS Safari 12
+- [ ] iOS Safari 13
+- [ ] iOS Safari Latest
+
+#### Responsiveness
+
+- [ ] Large desktop (1551 - 1880)
+- [ ] Medium desktop (1281 - 1550)
+- [ ] Desktop (1025 - 1280)
+- [ ] Tablet (801 - 1024)
+- [ ] Large mobile (401 - 1024)
+- [ ] Mobile (0 - 400)
+
+## General Functionality
+
+#### Links
+
+ - [ ] Links on all pages direct the user correctly
+ - [ ] Functional links (e.g. mailto) work correctly
+ - [ ] Links styled as buttons are styled anchor tags
+ 
+#### Forms
+
+- [ ] Validation works correctly (if applicable)
+- [ ] Submitted data is the format and type
+- [ ] Submit to the correct endpoint
+- [ ] Forms are consistently styled across the site (where applicable)
+- [ ] All fields have labels (with the `for` attribute)
+- [ ] Tooltips (if applicable)
+
+#### Images
+- [ ] All images are optimised, or sent through a CDN
+- [ ] All images have an `alt` attribute
+- [ ] All images are the correct size / dimension (test with varying browser widths / heights)
+
+#### Navigation
+
+- [ ] Elements that involve navigating from one place to another should _always_ be an anchor element
+- [ ] Browser history behaves as desired e.g. when a user uses the browsers forward/backward buttons
+
+## Coding
+
+- [ ] CSS/JS minified
+- [ ] Remove any `console.logs` used during development
+- [ ] All code is commented where necessary
+- [ ] Ensure all scripts are production versions
+- [ ] Check all scripts link from a valid and reputable CDN, e.g. Google APIs, Cloudflare
+- [ ] All third-party services and endpoint use the production API keys
+
+## SEO
+
+- [ ] Meta tags have been added (i.e. description, lang, etc)
+- [ ] Sitemap created and linked to
+- [ ] Page titles are correctly listed
+- [ ] Breadcrumb displays accurate page navigation/path
+- [ ] Schema tags added for breadcrumbs, products, articles, etc (i.e. ld+json snippets)
+- [ ] Google analytics code has been added
+
+## Shopify/Ecommerce
+
+#### Settings
+
+- [ ] Set the store email address to Client's address
+- [ ] Updated the store address to that of the Client
+
+#### General
+
+- [ ] Main site search returns products only
+- [ ] Search form uses GET and not POST method
+- [ ] Article search returns only articles
+- [ ] Link to terms and conditions exists
+- [ ] Link to privacy policy and/or cookie policy exists
+- [ ] Cookie consent popup (https://github.com/ketanmistry/ihavecookies)
+- [ ] Menus do not include a link to `#` unless they are parent dropdown options
+- [ ] Blank templates created and assigned where necessary
+
+#### Collections
+
+- [ ] Collections list template (`list-collections.liquid`) has been styled or redirected
+- [ ] Collections template has had styles applied or redirected
+
+#### Product Page
+
+- [ ] Variant options work as expected
+- [ ] Product adds to cart successfully
+- [ ] Out of stock/unavailable variants are clearly marked with appropriate messaging
+
+#### Cart
+
+- [ ] Cart displays the correct prices quantities, subtotals and totals
+- [ ] Line item quantities update
+- [ ] Cart sends correct product details through to the checkout
+- [ ] Checkout is styled up to match the brand colours
+- [ ] Checkout labels (language file) have been adjusted if necessary
+- [ ] Submitted a few test orders
+
+#### Pages/Articles
+
+- [ ] Page templates have styling applied
+- [ ] Blog articles are linked via an index
+- [ ] Article template has been styled
+- [ ] Social media share options have been added to the blog article template
+- [ ] 404 page template created and styled
+- [ ] Contact form added to contact us page
+
+#### Store Transfer
+
+- [ ] Initiate and complete store transfer 
+- [ ] Final invoice sent for the project
+
+## Github Repository
+
+- [ ] All unused templates/files/scripts have been removed to keep the project clean
+- [ ] `Readme.md` has been well documented with CSS style guides, instructions, etc
+- [ ] Wiki has been documented for projects with complex content management/data requirements (if necessary)
+- [ ] All issues for **this release** have been closed (except for this one!)
+- [ ] Release has been tagged and created
 
 ## Copyright and Attribution
 
